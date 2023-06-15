@@ -11,6 +11,11 @@ public class DiceGame {
         System.out.println("Die 2: " + die2);
         System.out.println("Total value: " + totalValue);
 
+	if (total > 7) {
+            System.out.println("You won!");
+        } else {
+            System.out.println("You lost.");
+        }
     }
 
     public static int rollDice() {
