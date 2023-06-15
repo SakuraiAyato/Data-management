@@ -3,7 +3,13 @@ import java.util.Scanner;
 
 public class DiceGame {
     public static void main(String[] args) {
-        System.out.println("Rolling dice...");
+	Scanner scanner = new Scanner(System.in);
+
+        System.out.print("What is your name? ");
+        String name = scanner.nextLine();
+        System.out.println("Hello, " + name + "!");
+        
+	System.out.println("Rolling dice...");
         int die1 = rollDice();
         int die2 = rollDice();
         int totalValue = die1 + die2;
